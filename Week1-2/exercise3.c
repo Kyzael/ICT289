@@ -30,7 +30,7 @@ void readOFFFile(const char *fname, Object3D *shape ){
     }
 
     shape->list_faces = (Face*)malloc(shape->nfaces * sizeof(Face)); //initialise array of nfaces
-
+    
     for(i=0; i<shape->nfaces; i++){   //increment through nfaces list in off file
         fscanf(fp, "%d ", &shape->list_faces[i].nvert);
         shape->list_faces[i].index = malloc(shape->list_faces[i].nvert * sizeof(int));
