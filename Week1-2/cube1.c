@@ -71,8 +71,8 @@ cube from Chapter 4 */
 
 
 #include <stdlib.h>
-#include <GL/glut.h> // using freeglut instead of glut
-//#include <GL/freeglut.h>
+//include <GL/glut.h> // using freeglut instead of glut
+#include <GL/freeglut.h>
 
 
 
